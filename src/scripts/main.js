@@ -46,9 +46,9 @@ const wardrobe = {
 console.log("The wardrobe")
 console.log("wardrobe height", wardrobe.height)
 console.log("wardrobe depth", wardrobe.depth)
-console.log("wardrobe width" ,wardrobe.width)
+console.log("wardrobe width", wardrobe.width)
 console.log("wardrobe manufacture", wardrobe.manufacturer)
-console.log(wardrobe.contents[0], wardrobe.contents[1], wardrobe.contents[2], wardrobe.contents[3], wardrobe.contents[4],)
+console.log(wardrobe.contents[0], wardrobe.contents[1], wardrobe.contents[2], wardrobe.contents[3], wardrobe.contents[4], )
 
 
 const empireStateBuilding = {
@@ -81,3 +81,39 @@ const costKey = "cost"
 const architectKey = "architect"
 
 console.log(`The empire state building is at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} by ${empireStateBuilding[architectKey]}. It cost ${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding[ownerKey]}`)
+
+
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
+}
+
+const partTimeInstructors = nashvilleSoftwareSchool.instructors.partTime
+
+for (let i = 0; i < partTimeInstructors.length; i++) {
+    console.log(partTimeInstructors[i])
+}
+
+const fullTimeInstructors = nashvilleSoftwareSchool.instructors.fullTime
+
+for (let i = 0; i < fullTimeInstructors.length; i++) {
+    console.log(fullTimeInstructors[i])
+}
+
+const instructorsObj = nashvilleSoftwareSchool.instructors
+for (let key in instructorsObj) {
+
+    const instructorArray = instructorsObj[key]
+    for (let i = 0; i < instructorArray.length; i++) {
+        console.log(instructorArray[i])
+    }
+}
+
+
+console.log ("Andy: ", fullTimeInstructors[fullTimeInstructors.length -1])
+console.log ("Zoe: ", nashvilleSoftwareSchool.instructors.partTime[0])
