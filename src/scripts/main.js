@@ -1,3 +1,4 @@
+import {githubData} from './github_data'
 // console.log("We're learning about objects!")
 
 // const car = {
@@ -250,104 +251,106 @@
 
 // *****************************************
 
-const empireStateBuilding = {
-    stories: 103,
-    height: 1453,
-    address: "350 Fifth Avenue, Manhattan, New York 10118",
-    squareFeet: 2768591,
-    constructionDate: 1931,
-    cost: 40948900,
-    owner: "Empire State Realty Trust",
-    eastWestLength: 424,
-    northSouthLength: 187,
-    architect: "Shreve, Lamb & Harmon"
-}
+// const empireStateBuilding = {
+//     stories: 103,
+//     height: 1453,
+//     address: "350 Fifth Avenue, Manhattan, New York 10118",
+//     squareFeet: 2768591,
+//     constructionDate: 1931,
+//     cost: 40948900,
+//     owner: "Empire State Realty Trust",
+//     eastWestLength: 424,
+//     northSouthLength: 187,
+//     architect: "Shreve, Lamb & Harmon"
+// }
 
 // Lightning Exercises 1: Use dot notation to output all of the dimensions of the Empire State Building to the console.
 
-console.log(`The Empire State Building stands ${empireStateBuilding.height} feet high with a length and width of ${empireStateBuilding.eastWestLength}' x ${empireStateBuilding.northSouthLength}'. The building also hold ${empireStateBuilding.stories} stories. while occupying ${empireStateBuilding.squareFeet} sq feet of space.`)
+// console.log(`The Empire State Building stands ${empireStateBuilding.height} feet high with a length and width of ${empireStateBuilding.eastWestLength}' x ${empireStateBuilding.northSouthLength}'. The building also hold ${empireStateBuilding.stories} stories. while occupying ${empireStateBuilding.squareFeet} sq feet of space.`)
 
-// Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
+// // Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
 
-const Address = "address"
-const ConstructionDate = "constructionDate"
-const Cost = "cost"
-const Owner = "owner"
-const Architect = "architect"
+// const Address = "address"
+// const ConstructionDate = "constructionDate"
+// const Cost = "cost"
+// const Owner = "owner"
+// const Architect = "architect"
 
-buildingAddress = empireStateBuilding[Address]
-buildingConstructionDate = empireStateBuilding[ConstructionDate]
-buildingCost = empireStateBuilding[Cost]
-buildingOwner = empireStateBuilding[Owner]
-buildingArchitect = empireStateBuilding[Architect]
+// buildingAddress = empireStateBuilding[Address]
+// buildingConstructionDate = empireStateBuilding[ConstructionDate]
+// buildingCost = empireStateBuilding[Cost]
+// buildingOwner = empireStateBuilding[Owner]
+// buildingArchitect = empireStateBuilding[Architect]
 
-console.log(buildingAddress)
-console.log(buildingConstructionDate)
-console.log(buildingCost)
-console.log(buildingOwner)
-console.log(buildingArchitect)
-
-// *****************************************
-
-const nashvilleSoftwareSchool = {
-    founded: 2012,
-    director: "John Wark",
-    instructors: {
-        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
-        partTime: ["Zoe", "Nathan"]
-    },
-    address: "500 Interstate Blvd. S"
-}
-
-// Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
-
-for (let i=0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++) {
-    console.log(nashvilleSoftwareSchool.instructors.partTime[i])
-}
-for (let j=0; j < nashvilleSoftwareSchool.instructors.fullTime.length; j++) {
-    console.log(nashvilleSoftwareSchool.instructors.fullTime[j])
-}
-
-// Lightning Exercise 2: Output only Andy and Zoe in the console.
-
-console.log(nashvilleSoftwareSchool.instructors.fullTime[4])
-console.log(nashvilleSoftwareSchool.instructors.partTime[0])
+// console.log(buildingAddress)
+// console.log(buildingConstructionDate)
+// console.log(buildingCost)
+// console.log(buildingOwner)
+// console.log(buildingArchitect)
 
 // *****************************************
 
-const beatles = {
-    albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
-    history: {
-        formed: 1960,
-        disbanded: 1970
-    },
-    members: [
-        {
-            name: "George Harrison",
-            birth: 1943,
-            death: 2001
-        },
-        {
-            name: "Paul McCartney",
-            birth: 1942,
-            death: null
-        },
-        {
-            name: "John Lennon",
-            birth: 1940,
-            death: 1980
-        },
-        {
-            name: "Ringo Starr",
-            birth: 1940,
-            death: null
-        }
-    ]
-}
+// const nashvilleSoftwareSchool = {
+//     founded: 2012,
+//     director: "John Wark",
+//     instructors: {
+//         fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+//         partTime: ["Zoe", "Nathan"]
+//     },
+//     address: "500 Interstate Blvd. S"
+// }
 
-// Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. He contributed heavily to the Magical Myster Tour Album.
+// // Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
 
-console.log(beatles.members[1].name +`was in the Beatles from `+ beatles.history.formed + ` to `+ beatles.history.disbanded + `. He was born in `+ beatles.members[1].birth +`. He contributed heavily to the `+ beatles.albums[3] +` Album.`)
+// for (let i=0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++) {
+//     console.log(nashvilleSoftwareSchool.instructors.partTime[i])
+// }
+// for (let j=0; j < nashvilleSoftwareSchool.instructors.fullTime.length; j++) {
+//     console.log(nashvilleSoftwareSchool.instructors.fullTime[j])
+// }
+
+// // Lightning Exercise 2: Output only Andy and Zoe in the console.
+
+// console.log(nashvilleSoftwareSchool.instructors.fullTime[4])
+// console.log(nashvilleSoftwareSchool.instructors.partTime[0])
 
 // *****************************************
 
+// const beatles = {
+//     albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
+//     history: {
+//         formed: 1960,
+//         disbanded: 1970
+//     },
+//     members: [
+//         {
+//             name: "George Harrison",
+//             birth: 1943,
+//             death: 2001
+//         },
+//         {
+//             name: "Paul McCartney",
+//             birth: 1942,
+//             death: null
+//         },
+//         {
+//             name: "John Lennon",
+//             birth: 1940,
+//             death: 1980
+//         },
+//         {
+//             name: "Ringo Starr",
+//             birth: 1940,
+//             death: null
+//         }
+//     ]
+// }
+
+// // Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. He contributed heavily to the Magical Myster Tour Album.
+
+// console.log(beatles.members[1].name +`was in the Beatles from `+ beatles.history.formed + ` to `+ beatles.history.disbanded + `. He was born in `+ beatles.members[1].birth +`. He contributed heavily to the `+ beatles.albums[3] +` Album.`)
+
+// *****************************************
+
+  // Start with this 8030403992
+  console.log("hello!", githubData)

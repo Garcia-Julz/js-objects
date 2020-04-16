@@ -4408,5 +4408,3 @@ const githubData = [
     }
   ]
 
-  // Start with this 8030403992
-console.log("hello!", githubData[?].id)
