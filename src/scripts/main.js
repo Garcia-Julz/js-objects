@@ -289,3 +289,27 @@ console.log(buildingArchitect)
 
 // *****************************************
 
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
+}
+
+// Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
+
+for (let i=0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++) {
+    console.log(nashvilleSoftwareSchool.instructors.partTime[i])
+}
+for (let j=0; j < nashvilleSoftwareSchool.instructors.fullTime.length; j++) {
+    console.log(nashvilleSoftwareSchool.instructors.fullTime[j])
+}
+
+// Lightning Exercise 2: Output only Andy and Zoe in the console.
+
+console.log(nashvilleSoftwareSchool.instructors.fullTime[4])
+console.log(nashvilleSoftwareSchool.instructors.partTime[0])
+
