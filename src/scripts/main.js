@@ -155,3 +155,137 @@
 
 // console.log(`${paul} was in the Beatles ${beatles.history.formed} to ${beatles.history.disbanded}. He was born in ${beatles.members[1].birth}. He contributed heavily to the ${mmt} Album.`)
 
+
+// const car = {
+//     year: 2015,
+//     make: "Ford",
+//     model: "Mustang",
+//     color: "Red",
+// }
+
+// const Animals = ["Kippers", "Jack", "Gypsy", "Angus", "Seymour Bouts", "Sharky"]
+
+// const mom = {
+//     gender: "female",
+//     age: "44",
+// }
+
+// const dad = {
+//     gender: "female",
+//     age: "49",
+// }
+
+// const sister = {
+//     gender: "female",
+//     age: "14",
+// }
+
+// const brother = {
+//     gender: "male",
+//     age: "20",
+// }
+
+// const familyMembers = [mom, dad, sister, brother,]
+
+// console.log (
+//     "familyMembers", familyMembers
+// )
+
+// const lassie = {
+//     age: 7,
+//     breed: "Collie",
+//     color: "White and Brown"
+// }
+
+// console.log(`Lassie's breed is ${lassie.breed}`)
+
+// console.log(`Lassie's age is ${lassie.age}`)
+
+// console.log(`Lassie's color is ${lassie.color}`)
+
+
+
+// const wardrobe = {
+//     height: 80,
+//     manufacturer: "Killibrew & Sons",
+//     contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
+//     depth: 38,
+//     width: 50
+// }
+
+// wardrobe.material = "Cedar"
+
+// console.log(`The wardrobe's height is ${wardrobe.height}"`)
+// console.log(`The wardrobe's manufacturer is ${wardrobe.manufacturer}`)
+// console.log(`The wardrobe contains the following: ${wardrobe.contents}`)
+// console.log(`The wardrobe's depth is ${wardrobe.depth}"`)
+// console.log(`The wardrobe's width is ${wardrobe.width}"`)
+// console.log(`The wardrobe is made with ${wardrobe.material}"`)
+
+// console.log(wardrobe)
+
+// Square bracket notation for key access
+// console.log(lassie["breed"])
+
+
+// Dot notation for key access
+// console.log(lassie.breed)
+
+// Breed is the key you want to get the value of in the object below
+// const keyToLookup = "breed"
+
+// // First, make JavaScript evaluate the variable and give us its value
+// console.log(keyToLookup)
+
+// const lassie = {
+//     age: 7,
+//     breed: "Collie",
+//     color: "White and Brown"
+// }
+
+// // Use the value of `keyToLookup` to get the value you want
+// const lassiesBreed = lassie[keyToLookup]
+
+// console.log(lassiesBreed)
+
+// *****************************************
+
+const empireStateBuilding = {
+    stories: 103,
+    height: 1453,
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    squareFeet: 2768591,
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    eastWestLength: 424,
+    northSouthLength: 187,
+    architect: "Shreve, Lamb & Harmon"
+}
+
+// Lightning Exercises 1: Use dot notation to output all of the dimensions of the Empire State Building to the console.
+
+console.log(`The Empire State Building stands ${empireStateBuilding.height} feet high with a length and width of ${empireStateBuilding.eastWestLength}' x ${empireStateBuilding.northSouthLength}'. The building also hold ${empireStateBuilding.stories} stories. while occupying ${empireStateBuilding.squareFeet} sq feet of space.`)
+
+// Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
+
+const Address = "address"
+const ConstructionDate = "constructionDate"
+const Cost = "cost"
+const Owner = "owner"
+const Architect = "architect"
+
+buildingAddress = empireStateBuilding[Address]
+buildingConstructionDate = empireStateBuilding[ConstructionDate]
+buildingCost = empireStateBuilding[Cost]
+buildingOwner = empireStateBuilding[Owner]
+buildingArchitect = empireStateBuilding[Architect]
+
+console.log(buildingAddress)
+console.log(buildingConstructionDate)
+console.log(buildingCost)
+console.log(buildingOwner)
+console.log(buildingArchitect)
+
+// *****************************************
+
